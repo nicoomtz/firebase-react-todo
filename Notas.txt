@@ -1,0 +1,19 @@
+Para usar firebase en React lo que hacemos es instalar el package con:
+npm i firebase
+
+Y luego creamos un archivo Firebase.js para cargar la configuración de la aplicación.
+
+Como incluir un objeto a nuestra colleccion de firestore:
+
+await addDoc(collection(db, "todos"), {
+        texto: input,
+        completed: false,
+      })
+
+
+La función query() funciona para buscar una colleccion en nuestro firestore. ejemplo
+
+const q = query(collection(db, 'todos'))
+
+
+Puedes escuchar un documento con el método onSnapshot(). Una llamada inicial con la devolución de llamada que proporcionas crea una instantánea del documento de inmediato con los contenidos actuales de ese documento. Después, cada vez que cambian los contenidos, otra llamada actualiza la instantánea del documento.
