@@ -29,10 +29,8 @@
 
 .tarea button {
   border: none;
-  background-color: rgba(199, 140, 140, 0.877);
+  background-color: transparent;
   user-select: none;
   cursor: pointer;
-  padding: 5px;
-  border-radius: 10px;
   color: white;
 }
